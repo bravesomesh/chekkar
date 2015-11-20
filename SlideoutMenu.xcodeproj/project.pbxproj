@@ -11,6 +11,7 @@
 		090C12A31BFCEF2C008D1218 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 090C12A11BFCEF2C008D1218 /* FBSDKLoginKit.framework */; };
 		0917AD871BECC6990061BB2B /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0917AD861BECC6990061BB2B /* SWRevealViewController.m */; };
 		0917AD891BECCCEC0061BB2B /* BackTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0917AD881BECCCEC0061BB2B /* BackTableVC.swift */; };
+		0921CCB51BFF3F9E00732331 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0921CCB41BFF3F9E00732331 /* CoreLocation.framework */; };
 		092EF34E1BE9E89000A18B40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092EF34D1BE9E89000A18B40 /* AppDelegate.swift */; };
 		092EF3501BE9E89000A18B40 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092EF34F1BE9E89000A18B40 /* ViewController.swift */; };
 		092EF3531BE9E89000A18B40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 092EF3511BE9E89000A18B40 /* Main.storyboard */; };
@@ -47,6 +48,7 @@
 		0917AD851BECC6990061BB2B /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = "../../../Downloads/SWRevealViewController-master/SWRevealViewController/SWRevealViewController.h"; sourceTree = "<group>"; };
 		0917AD861BECC6990061BB2B /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = "../../../Downloads/SWRevealViewController-master/SWRevealViewController/SWRevealViewController.m"; sourceTree = "<group>"; };
 		0917AD881BECCCEC0061BB2B /* BackTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackTableVC.swift; sourceTree = "<group>"; };
+		0921CCB41BFF3F9E00732331 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		092EF34A1BE9E89000A18B40 /* SlideoutMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlideoutMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		092EF34D1BE9E89000A18B40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		092EF34F1BE9E89000A18B40 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0921CCB51BFF3F9E00732331 /* CoreLocation.framework in Frameworks */,
 				0989024A1BFCF96D009397D8 /* Bolts.framework in Frameworks */,
 				090C12A31BFCEF2C008D1218 /* FBSDKLoginKit.framework in Frameworks */,
 				090C12A21BFCEF2C008D1218 /* FBSDKCoreKit.framework in Frameworks */,
@@ -126,6 +129,7 @@
 		092EF34C1BE9E89000A18B40 /* SlideoutMenu */ = {
 			isa = PBXGroup;
 			children = (
+				0921CCB41BFF3F9E00732331 /* CoreLocation.framework */,
 				098902491BFCF96D009397D8 /* Bolts.framework */,
 				090C12A01BFCEF2C008D1218 /* FBSDKCoreKit.framework */,
 				090C12A11BFCEF2C008D1218 /* FBSDKLoginKit.framework */,

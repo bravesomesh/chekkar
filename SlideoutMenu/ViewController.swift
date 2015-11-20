@@ -7,33 +7,57 @@
 //
 
 import UIKit
+import CoreLocation
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, CLLocationManagerDelegate {
 
-    @IBOutlet weak var Open: UIBarButtonItem!
-    @IBOutlet weak var Label: UILabel!
+    let locationManager = CLLocationManager()
 
-    var varView = Int()
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        Open.target = self.revealViewController()
-        Open.action = Selector("revealToggle:")
-        
-        self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
-    
-        if(varView == 0){
-            Label.text = "Strings"
-        } else {
-            Label.text = "Others"
-        }
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.startUpdatingLocation()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func showAddViewController(placemark:CLPlacemark){
+        self.performSegueWithIdentifier("geolocation", sender: placemark)
+    }
+    
+    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        let longitude :CLLocationDegrees = -122.0312186
+        let latitude :CLLocationDegrees = 37.33233141
+        
+        let location = CLLocation(latitude: latitude, longitude: longitude) //changed!!!
 
-   
+        CLGeocoder().reverseGeocodeLocation(location, completionHandler: {
+            (placemarks, error) in
+            if (error != nil) {print("reverse geodcode fail: \(error!.localizedDescription)")}
+            if (placemarks!.count > 0){
+                //print(placemarks)
+                let pm = placemarks![0] 
+                self.displayLocationInfo(pm)
+            }
+        })
+    }
+    
+    func displayLocationInfo(placemark: CLPlacemark)
+    {
+        self.locationManager.stopUpdatingLocation()
+        print(placemark.locality)
+        print(placemark.postalCode)
+        print(placemark.country)
+        self.performSegueWithIdentifier("geolocation", sender: placemark)
+    }
+    
+    func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
+        print("Error while updating location " + error.localizedDescription)
+    }
 }
 
