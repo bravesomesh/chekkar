@@ -1,0 +1,6 @@
+framework module Pods_SlideoutMenu {
+  umbrella header "Pods-SlideoutMenu-umbrella.h"
+
+  export *
+  module * { export * }
+}

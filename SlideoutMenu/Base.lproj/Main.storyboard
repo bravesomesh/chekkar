@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="pEX-Jd-mFE">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="IUL-3L-fIr">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -48,6 +49,70 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7DN-E4-mzg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-964" y="461"/>
+        </scene>
+        <!--Background Animation View Controller-->
+        <scene sceneID="Wzu-6H-mgc">
+            <objects>
+                <viewController id="IUL-3L-fIr" customClass="BackgroundAnimationViewController" customModule="SlideoutMenu" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="obO-Hm-0EU"/>
+                        <viewControllerLayoutGuide type="bottom" id="nbz-3O-PIs"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Hak-uA-gxf">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z60-mR-yTR">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="61"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="61" id="YCH-HH-cl2"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aH4-W4-KYQ" customClass="CustomKolodaView" customModule="SlideoutMenu" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="61" width="600" height="539"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="drG-Jd-DTs">
+                                        <rect key="frame" x="204" y="462" width="30" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="Bye"/>
+                                        <connections>
+                                            <action selector="leftButtonTapped" destination="IUL-3L-fIr" eventType="touchUpInside" id="NNL-kU-Qct"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZSS-FY-MeK">
+                                        <rect key="frame" x="365" y="462" width="30" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="Hi"/>
+                                        <connections>
+                                            <action selector="rightButtonTapped" destination="IUL-3L-fIr" eventType="touchUpInside" id="axH-WZ-jCR"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="z60-mR-yTR" firstAttribute="top" secondItem="Hak-uA-gxf" secondAttribute="topMargin" id="1UF-Pp-PcR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aH4-W4-KYQ" secondAttribute="trailing" constant="-20" id="1r5-b4-K3Q"/>
+                            <constraint firstItem="nbz-3O-PIs" firstAttribute="top" secondItem="aH4-W4-KYQ" secondAttribute="bottom" id="5YE-5N-OlU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="z60-mR-yTR" secondAttribute="trailing" constant="-20" id="85B-xg-RZL"/>
+                            <constraint firstItem="aH4-W4-KYQ" firstAttribute="top" secondItem="z60-mR-yTR" secondAttribute="bottom" id="Mq4-Qt-IgX"/>
+                            <constraint firstItem="aH4-W4-KYQ" firstAttribute="leading" secondItem="Hak-uA-gxf" secondAttribute="leadingMargin" constant="-20" id="feT-ZM-TKE"/>
+                            <constraint firstItem="z60-mR-yTR" firstAttribute="leading" secondItem="Hak-uA-gxf" secondAttribute="leadingMargin" constant="-20" id="n0C-E3-H5T"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="kolodaView" destination="aH4-W4-KYQ" id="nIz-cc-Q49"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ct7-NV-JH6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-964" y="1223"/>
         </scene>
         <!--Reveal View Controller-->
         <scene sceneID="5yB-tc-fBG">
@@ -133,7 +198,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mj8-tV-i2H">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mj8-tV-i2H">
                                 <rect key="frame" x="276" y="241" width="51" height="31"/>
                                 <animations/>
                             </switch>

@@ -11,6 +11,11 @@
 		090C12A31BFCEF2C008D1218 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 090C12A11BFCEF2C008D1218 /* FBSDKLoginKit.framework */; };
 		0917AD871BECC6990061BB2B /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0917AD861BECC6990061BB2B /* SWRevealViewController.m */; };
 		0917AD891BECCCEC0061BB2B /* BackTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0917AD881BECCCEC0061BB2B /* BackTableVC.swift */; };
+		091B3AA81C0C1D0C00166A96 /* BackgroundAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091B3AA41C0C1D0C00166A96 /* BackgroundAnimationViewController.swift */; };
+		091B3AAB1C0C1D0C00166A96 /* KolodaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091B3AA71C0C1D0C00166A96 /* KolodaView.swift */; };
+		091B3AAD1C0C203500166A96 /* DraggableCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091B3AAC1C0C203500166A96 /* DraggableCardView.swift */; };
+		091B3AAF1C0C203C00166A96 /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091B3AAE1C0C203C00166A96 /* OverlayView.swift */; };
+		091B3AB11C0C22DC00166A96 /* CustomKolodaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091B3AB01C0C22DC00166A96 /* CustomKolodaView.swift */; };
 		0921CCB51BFF3F9E00732331 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0921CCB41BFF3F9E00732331 /* CoreLocation.framework */; };
 		092EF34E1BE9E89000A18B40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092EF34D1BE9E89000A18B40 /* AppDelegate.swift */; };
 		092EF3501BE9E89000A18B40 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092EF34F1BE9E89000A18B40 /* ViewController.swift */; };
@@ -22,6 +27,10 @@
 		097E2AE61BFB42C800BA7759 /* Swipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097E2AE51BFB42C800BA7759 /* Swipe.swift */; };
 		097E2AEE1BFCD88C00BA7759 /* FbLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097E2AED1BFCD88C00BA7759 /* FbLoginController.swift */; };
 		0989024A1BFCF96D009397D8 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 098902491BFCF96D009397D8 /* Bolts.framework */; };
+		09D9B0D61C1C00E800AB45E5 /* CustomOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D9B0D51C1C00E800AB45E5 /* CustomOverlayView.swift */; };
+		09D9B0D81C1C027A00AB45E5 /* CustomOverlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09D9B0D71C1C027A00AB45E5 /* CustomOverlayView.xib */; };
+		09D9B0DA1C1C034900AB45E5 /* ExampleOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D9B0D91C1C034900AB45E5 /* ExampleOverlayView.swift */; };
+		7C6E718FC79393F3F514CDA6 /* Pods_SlideoutMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8613A9DC8D131C5B21616983 /* Pods_SlideoutMenu.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +57,11 @@
 		0917AD851BECC6990061BB2B /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = "../../../Downloads/SWRevealViewController-master/SWRevealViewController/SWRevealViewController.h"; sourceTree = "<group>"; };
 		0917AD861BECC6990061BB2B /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = "../../../Downloads/SWRevealViewController-master/SWRevealViewController/SWRevealViewController.m"; sourceTree = "<group>"; };
 		0917AD881BECCCEC0061BB2B /* BackTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackTableVC.swift; sourceTree = "<group>"; };
+		091B3AA41C0C1D0C00166A96 /* BackgroundAnimationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundAnimationViewController.swift; sourceTree = "<group>"; };
+		091B3AA71C0C1D0C00166A96 /* KolodaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KolodaView.swift; sourceTree = "<group>"; };
+		091B3AAC1C0C203500166A96 /* DraggableCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DraggableCardView.swift; path = DraggableCardView/DraggableCardView.swift; sourceTree = "<group>"; };
+		091B3AAE1C0C203C00166A96 /* OverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OverlayView.swift; path = OverlayView/OverlayView.swift; sourceTree = "<group>"; };
+		091B3AB01C0C22DC00166A96 /* CustomKolodaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomKolodaView.swift; sourceTree = "<group>"; };
 		0921CCB41BFF3F9E00732331 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		092EF34A1BE9E89000A18B40 /* SlideoutMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlideoutMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		092EF34D1BE9E89000A18B40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +79,12 @@
 		097E2AE51BFB42C800BA7759 /* Swipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Swipe.swift; sourceTree = "<group>"; };
 		097E2AED1BFCD88C00BA7759 /* FbLoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FbLoginController.swift; sourceTree = "<group>"; };
 		098902491BFCF96D009397D8 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		09D9B0D51C1C00E800AB45E5 /* CustomOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomOverlayView.swift; sourceTree = "<group>"; };
+		09D9B0D71C1C027A00AB45E5 /* CustomOverlayView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomOverlayView.xib; sourceTree = "<group>"; };
+		09D9B0D91C1C034900AB45E5 /* ExampleOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleOverlayView.swift; sourceTree = "<group>"; };
+		7558440FA1425813D9A97ACA /* Pods-SlideoutMenu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlideoutMenu.release.xcconfig"; path = "Pods/Target Support Files/Pods-SlideoutMenu/Pods-SlideoutMenu.release.xcconfig"; sourceTree = "<group>"; };
+		8613A9DC8D131C5B21616983 /* Pods_SlideoutMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SlideoutMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D33D2A74619529C46327F23A /* Pods-SlideoutMenu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlideoutMenu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SlideoutMenu/Pods-SlideoutMenu.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +96,7 @@
 				0989024A1BFCF96D009397D8 /* Bolts.framework in Frameworks */,
 				090C12A31BFCEF2C008D1218 /* FBSDKLoginKit.framework in Frameworks */,
 				090C12A21BFCEF2C008D1218 /* FBSDKCoreKit.framework in Frameworks */,
+				7C6E718FC79393F3F514CDA6 /* Pods_SlideoutMenu.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +134,8 @@
 				092EF3611BE9E89000A18B40 /* SlideoutMenuTests */,
 				092EF36C1BE9E89000A18B40 /* SlideoutMenuUITests */,
 				092EF34B1BE9E89000A18B40 /* Products */,
+				7C328B7F91254B9C8DD58921 /* Pods */,
+				60C690ACB4239DDFF69AD878 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -137,12 +160,20 @@
 				092EF34D1BE9E89000A18B40 /* AppDelegate.swift */,
 				092EF34F1BE9E89000A18B40 /* ViewController.swift */,
 				092EF3511BE9E89000A18B40 /* Main.storyboard */,
+				091B3AB01C0C22DC00166A96 /* CustomKolodaView.swift */,
+				091B3AA41C0C1D0C00166A96 /* BackgroundAnimationViewController.swift */,
+				091B3AAE1C0C203C00166A96 /* OverlayView.swift */,
+				091B3AAC1C0C203500166A96 /* DraggableCardView.swift */,
+				091B3AA71C0C1D0C00166A96 /* KolodaView.swift */,
 				097E2AE51BFB42C800BA7759 /* Swipe.swift */,
 				0917AD881BECCCEC0061BB2B /* BackTableVC.swift */,
 				092EF3541BE9E89000A18B40 /* Assets.xcassets */,
 				092EF3561BE9E89000A18B40 /* LaunchScreen.storyboard */,
 				092EF3591BE9E89000A18B40 /* Info.plist */,
 				097E2AED1BFCD88C00BA7759 /* FbLoginController.swift */,
+				09D9B0D51C1C00E800AB45E5 /* CustomOverlayView.swift */,
+				09D9B0D71C1C027A00AB45E5 /* CustomOverlayView.xib */,
+				09D9B0D91C1C034900AB45E5 /* ExampleOverlayView.swift */,
 			);
 			path = SlideoutMenu;
 			sourceTree = "<group>";
@@ -165,6 +196,23 @@
 			path = SlideoutMenuUITests;
 			sourceTree = "<group>";
 		};
+		60C690ACB4239DDFF69AD878 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8613A9DC8D131C5B21616983 /* Pods_SlideoutMenu.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7C328B7F91254B9C8DD58921 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D33D2A74619529C46327F23A /* Pods-SlideoutMenu.debug.xcconfig */,
+				7558440FA1425813D9A97ACA /* Pods-SlideoutMenu.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -172,9 +220,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 092EF3721BE9E89000A18B40 /* Build configuration list for PBXNativeTarget "SlideoutMenu" */;
 			buildPhases = (
+				DA92AB7912D8229AA4A73B05 /* Check Pods Manifest.lock */,
 				092EF3461BE9E89000A18B40 /* Sources */,
 				092EF3471BE9E89000A18B40 /* Frameworks */,
 				092EF3481BE9E89000A18B40 /* Resources */,
+				5E02EDC012B831DC5ADD8B18 /* Embed Pods Frameworks */,
+				50D0C7C90958AE4D8B233E3D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -270,6 +321,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				092EF3581BE9E89000A18B40 /* LaunchScreen.storyboard in Resources */,
+				09D9B0D81C1C027A00AB45E5 /* CustomOverlayView.xib in Resources */,
 				092EF3551BE9E89000A18B40 /* Assets.xcassets in Resources */,
 				092EF3531BE9E89000A18B40 /* Main.storyboard in Resources */,
 			);
@@ -291,17 +343,72 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		50D0C7C90958AE4D8B233E3D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SlideoutMenu/Pods-SlideoutMenu-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E02EDC012B831DC5ADD8B18 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SlideoutMenu/Pods-SlideoutMenu-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA92AB7912D8229AA4A73B05 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		092EF3461BE9E89000A18B40 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				091B3AB11C0C22DC00166A96 /* CustomKolodaView.swift in Sources */,
+				091B3AAB1C0C1D0C00166A96 /* KolodaView.swift in Sources */,
+				09D9B0D61C1C00E800AB45E5 /* CustomOverlayView.swift in Sources */,
+				091B3AAD1C0C203500166A96 /* DraggableCardView.swift in Sources */,
 				092EF3501BE9E89000A18B40 /* ViewController.swift in Sources */,
 				092EF34E1BE9E89000A18B40 /* AppDelegate.swift in Sources */,
 				097E2AE61BFB42C800BA7759 /* Swipe.swift in Sources */,
 				097E2AEE1BFCD88C00BA7759 /* FbLoginController.swift in Sources */,
 				0917AD891BECCCEC0061BB2B /* BackTableVC.swift in Sources */,
+				091B3AA81C0C1D0C00166A96 /* BackgroundAnimationViewController.swift in Sources */,
 				0917AD871BECC6990061BB2B /* SWRevealViewController.m in Sources */,
+				091B3AAF1C0C203C00166A96 /* OverlayView.swift in Sources */,
+				09D9B0DA1C1C034900AB45E5 /* ExampleOverlayView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,6 +548,7 @@
 		};
 		092EF3731BE9E89000A18B40 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D33D2A74619529C46327F23A /* Pods-SlideoutMenu.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -459,6 +567,7 @@
 		};
 		092EF3741BE9E89000A18B40 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7558440FA1425813D9A97ACA /* Pods-SlideoutMenu.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
