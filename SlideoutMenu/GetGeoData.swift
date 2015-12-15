@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  GetGeoData.swift
 //  SlideoutMenu
 //
 //  Created by Somesh Vyas on 04/11/15.
@@ -9,7 +9,7 @@
 import UIKit
 import CoreLocation
 
-class ViewController: UIViewController, CLLocationManagerDelegate {
+class GetGeoData: UIViewController, CLLocationManagerDelegate {
 
     let locationManager = CLLocationManager()
 
@@ -31,17 +31,16 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        let longitude :CLLocationDegrees = -122.0312186
-        let latitude :CLLocationDegrees = 37.33233141
-        
-        let location = CLLocation(latitude: latitude, longitude: longitude) //changed!!!
-
+        let location:CLLocation = locations[locations.count - 1]
+//        print("location latitude")
+//        print(location.coordinate.latitude)
+//        print("location longitude")
+//        print(location.coordinate.longitude)
         CLGeocoder().reverseGeocodeLocation(location, completionHandler: {
             (placemarks, error) in
             if (error != nil) {print("reverse geodcode fail: \(error!.localizedDescription)")}
             if (placemarks!.count > 0){
-                //print(placemarks)
-                let pm = placemarks![0] 
+                let pm = placemarks![0]
                 self.displayLocationInfo(pm)
             }
         })
@@ -50,9 +49,9 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     func displayLocationInfo(placemark: CLPlacemark)
     {
         self.locationManager.stopUpdatingLocation()
-        print(placemark.locality)
-        print(placemark.postalCode)
-        print(placemark.country)
+//        print(placemark.locality)
+//        print(placemark.postalCode)
+//        print(placemark.country)
         self.performSegueWithIdentifier("geolocation", sender: placemark)
     }
     

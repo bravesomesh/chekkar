@@ -18,7 +18,7 @@
 		091B3AB11C0C22DC00166A96 /* CustomKolodaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091B3AB01C0C22DC00166A96 /* CustomKolodaView.swift */; };
 		0921CCB51BFF3F9E00732331 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0921CCB41BFF3F9E00732331 /* CoreLocation.framework */; };
 		092EF34E1BE9E89000A18B40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092EF34D1BE9E89000A18B40 /* AppDelegate.swift */; };
-		092EF3501BE9E89000A18B40 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092EF34F1BE9E89000A18B40 /* ViewController.swift */; };
+		092EF3501BE9E89000A18B40 /* GetGeoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092EF34F1BE9E89000A18B40 /* GetGeoData.swift */; };
 		092EF3531BE9E89000A18B40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 092EF3511BE9E89000A18B40 /* Main.storyboard */; };
 		092EF3551BE9E89000A18B40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 092EF3541BE9E89000A18B40 /* Assets.xcassets */; };
 		092EF3581BE9E89000A18B40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 092EF3561BE9E89000A18B40 /* LaunchScreen.storyboard */; };
@@ -65,7 +65,7 @@
 		0921CCB41BFF3F9E00732331 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		092EF34A1BE9E89000A18B40 /* SlideoutMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlideoutMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		092EF34D1BE9E89000A18B40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		092EF34F1BE9E89000A18B40 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		092EF34F1BE9E89000A18B40 /* GetGeoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetGeoData.swift; sourceTree = "<group>"; };
 		092EF3521BE9E89000A18B40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		092EF3541BE9E89000A18B40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		092EF3571BE9E89000A18B40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -158,7 +158,7 @@
 				090C12A11BFCEF2C008D1218 /* FBSDKLoginKit.framework */,
 				0917AD831BECC66E0061BB2B /* Supporting Files */,
 				092EF34D1BE9E89000A18B40 /* AppDelegate.swift */,
-				092EF34F1BE9E89000A18B40 /* ViewController.swift */,
+				092EF34F1BE9E89000A18B40 /* GetGeoData.swift */,
 				092EF3511BE9E89000A18B40 /* Main.storyboard */,
 				091B3AB01C0C22DC00166A96 /* CustomKolodaView.swift */,
 				091B3AA41C0C1D0C00166A96 /* BackgroundAnimationViewController.swift */,
@@ -400,7 +400,7 @@
 				091B3AAB1C0C1D0C00166A96 /* KolodaView.swift in Sources */,
 				09D9B0D61C1C00E800AB45E5 /* CustomOverlayView.swift in Sources */,
 				091B3AAD1C0C203500166A96 /* DraggableCardView.swift in Sources */,
-				092EF3501BE9E89000A18B40 /* ViewController.swift in Sources */,
+				092EF3501BE9E89000A18B40 /* GetGeoData.swift in Sources */,
 				092EF34E1BE9E89000A18B40 /* AppDelegate.swift in Sources */,
 				097E2AE61BFB42C800BA7759 /* Swipe.swift in Sources */,
 				097E2AEE1BFCD88C00BA7759 /* FbLoginController.swift in Sources */,
