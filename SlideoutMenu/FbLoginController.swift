@@ -19,46 +19,20 @@ class FbLoginController: UIViewController, FBSDKLoginButtonDelegate {
         if (FBSDKAccessToken.currentAccessToken() != nil)
         {
             // User is already logged in, do work such as go to next view controller.
-            
-            // Or Show Logout Button
-//            let loginView : FBSDKLoginButton = FBSDKLoginButton()
-//            self.view.addSubview(loginView)
-//            loginView.center = self.view.center
-//            loginView.readPermissions = ["public_profile", "email", "user_friends"]
-//            loginView.delegate = self
-//            self.returnUserData()
-                print("logged in")
+            print("logged in")
         }
         else
         {
-//            let loginView : FBSDKLoginButton = FBSDKLoginButton()
-//            self.view.addSubview(loginView)
-//            loginView.center = self.view.center
-//            loginView.readPermissions = ["public_profile", "email", "user_friends"]
-//            loginView.delegate = self
-                print("not logged in")
+            print("not logged in")
+            let loginView : FBSDKLoginButton = FBSDKLoginButton()
+            self.view.addSubview(loginView)
+            loginView.center = self.view.center
+            loginView.readPermissions = ["public_profile", "email", "user_friends","user_about_me","user_actions.music","user_birthday","user_likes","user_photos"]
+            loginView.delegate = self
         }
-        let loginButton = FBSDKLoginButton()
-        loginButton.readPermissions = ["public_profile","email","user_friends"]
-        loginButton.center = self.view.center
-        
-        loginButton.delegate = self
-        self.view.addSubview(loginButton)
-        
     }
     
-//    func loginButton(loginButton: FBSDKLoginButton!, didCompleteWithResult result: FBSDKLoginManagerLoginResult!, error: NSError!) {
-//        if(error == nil){
-//            print("login complete")
-//            self.performSegueWithIdentifier("show_app", sender: self)
-//        } else {
-//            print(error.localizedDescription)
-//        }
-//        
-//    }
-    
     func loginButtonDidLogOut(loginButton: FBSDKLoginButton!) {
-        
         print("user logged out")
     }
     // Facebook Delegate Methods
@@ -74,15 +48,17 @@ class FbLoginController: UIViewController, FBSDKLoginButtonDelegate {
             // Handle cancellations
         }
         else {
+            print(result)
             // If you ask for multiple permissions at once, you
             // should check if specific permissions missing
             if result.grantedPermissions.contains("email")
             {
+                print("email hai")
                 // Do work
-                self.performSegueWithIdentifier("show_app", sender: self)
+//                self.performSegueWithIdentifier("show_app", sender: self)
             }
             
-//            self.returnUserData()
+            self.returnUserData()
         }
         
     }

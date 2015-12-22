@@ -22,11 +22,12 @@
                     </view>
                     <connections>
                         <segue destination="25b-bD-vQz" kind="presentation" identifier="geolocation" id="64a-OV-Mwb"/>
+                        <segue destination="NE0-8d-U4m" kind="show" identifier="showProfiles" id="bKR-De-o86"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jLl-Bj-wkr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1784" y="461"/>
+            <point key="canvasLocation" x="-958" y="-421"/>
         </scene>
         <!--Fb Login Controller-->
         <scene sceneID="0e7-2g-5cY">
@@ -112,7 +113,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ct7-NV-JH6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-964" y="1223"/>
+            <point key="canvasLocation" x="-830" y="1317"/>
         </scene>
         <!--Reveal View Controller-->
         <scene sceneID="5yB-tc-fBG">
@@ -307,6 +308,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="bKR-De-o86"/>
         <segue reference="scC-WL-Ttd"/>
     </inferredMetricsTieBreakers>
 </document>

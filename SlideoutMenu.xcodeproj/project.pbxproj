@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		090C12A21BFCEF2C008D1218 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 090C12A01BFCEF2C008D1218 /* FBSDKCoreKit.framework */; };
 		090C12A31BFCEF2C008D1218 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 090C12A11BFCEF2C008D1218 /* FBSDKLoginKit.framework */; };
-		0917AD871BECC6990061BB2B /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0917AD861BECC6990061BB2B /* SWRevealViewController.m */; };
 		0917AD891BECCCEC0061BB2B /* BackTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0917AD881BECCCEC0061BB2B /* BackTableVC.swift */; };
 		091B3AA81C0C1D0C00166A96 /* BackgroundAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091B3AA41C0C1D0C00166A96 /* BackgroundAnimationViewController.swift */; };
 		091B3AAB1C0C1D0C00166A96 /* KolodaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091B3AA71C0C1D0C00166A96 /* KolodaView.swift */; };
@@ -24,6 +23,7 @@
 		092EF3581BE9E89000A18B40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 092EF3561BE9E89000A18B40 /* LaunchScreen.storyboard */; };
 		092EF3631BE9E89000A18B40 /* SlideoutMenuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092EF3621BE9E89000A18B40 /* SlideoutMenuTests.swift */; };
 		092EF36E1BE9E89000A18B40 /* SlideoutMenuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092EF36D1BE9E89000A18B40 /* SlideoutMenuUITests.swift */; };
+		096267B51C25D2120067EE02 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 096267B31C25D2120067EE02 /* SWRevealViewController.m */; };
 		097E2AE61BFB42C800BA7759 /* Swipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097E2AE51BFB42C800BA7759 /* Swipe.swift */; };
 		097E2AEE1BFCD88C00BA7759 /* FbLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097E2AED1BFCD88C00BA7759 /* FbLoginController.swift */; };
 		0989024A1BFCF96D009397D8 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 098902491BFCF96D009397D8 /* Bolts.framework */; };
@@ -54,8 +54,6 @@
 		090C12A01BFCEF2C008D1218 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		090C12A11BFCEF2C008D1218 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		0917AD841BECC6990061BB2B /* SlideoutMenu-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SlideoutMenu-Bridging-Header.h"; sourceTree = "<group>"; };
-		0917AD851BECC6990061BB2B /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = "../../../Downloads/SWRevealViewController-master/SWRevealViewController/SWRevealViewController.h"; sourceTree = "<group>"; };
-		0917AD861BECC6990061BB2B /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = "../../../Downloads/SWRevealViewController-master/SWRevealViewController/SWRevealViewController.m"; sourceTree = "<group>"; };
 		0917AD881BECCCEC0061BB2B /* BackTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackTableVC.swift; sourceTree = "<group>"; };
 		091B3AA41C0C1D0C00166A96 /* BackgroundAnimationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundAnimationViewController.swift; sourceTree = "<group>"; };
 		091B3AA71C0C1D0C00166A96 /* KolodaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KolodaView.swift; sourceTree = "<group>"; };
@@ -76,6 +74,8 @@
 		092EF3691BE9E89000A18B40 /* SlideoutMenuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlideoutMenuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		092EF36D1BE9E89000A18B40 /* SlideoutMenuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideoutMenuUITests.swift; sourceTree = "<group>"; };
 		092EF36F1BE9E89000A18B40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		096267B31C25D2120067EE02 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		096267B41C25D2120067EE02 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		097E2AE51BFB42C800BA7759 /* Swipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Swipe.swift; sourceTree = "<group>"; };
 		097E2AED1BFCD88C00BA7759 /* FbLoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FbLoginController.swift; sourceTree = "<group>"; };
 		098902491BFCF96D009397D8 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
@@ -120,8 +120,8 @@
 		0917AD831BECC66E0061BB2B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				0917AD851BECC6990061BB2B /* SWRevealViewController.h */,
-				0917AD861BECC6990061BB2B /* SWRevealViewController.m */,
+				096267B31C25D2120067EE02 /* SWRevealViewController.m */,
+				096267B41C25D2120067EE02 /* SWRevealViewController.h */,
 				0917AD841BECC6990061BB2B /* SlideoutMenu-Bridging-Header.h */,
 			);
 			name = "Supporting Files";
@@ -396,6 +396,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				096267B51C25D2120067EE02 /* SWRevealViewController.m in Sources */,
 				091B3AB11C0C22DC00166A96 /* CustomKolodaView.swift in Sources */,
 				091B3AAB1C0C1D0C00166A96 /* KolodaView.swift in Sources */,
 				09D9B0D61C1C00E800AB45E5 /* CustomOverlayView.swift in Sources */,
@@ -406,7 +407,6 @@
 				097E2AEE1BFCD88C00BA7759 /* FbLoginController.swift in Sources */,
 				0917AD891BECCCEC0061BB2B /* BackTableVC.swift in Sources */,
 				091B3AA81C0C1D0C00166A96 /* BackgroundAnimationViewController.swift in Sources */,
-				0917AD871BECC6990061BB2B /* SWRevealViewController.m in Sources */,
 				091B3AAF1C0C203C00166A96 /* OverlayView.swift in Sources */,
 				09D9B0DA1C1C034900AB45E5 /* ExampleOverlayView.swift in Sources */,
 			);
